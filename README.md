@@ -1,2 +1,9 @@
-# README.generator
-A CLI Application that creates a README file
+{
+	"title": "dxsad",
+	"description": "dsad",
+	"installation": "dsad",
+	"usage": "dasd",
+	"license": "dasd",
+	"contributing": "ds",
+	"questions": "dfsfdsda"
+}
