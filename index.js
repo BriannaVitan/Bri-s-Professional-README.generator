@@ -8,6 +8,8 @@ const generateReadme = ({ Title, Description, TableofContent, Installation, Usag
 `![Static Badge](https://img.shields.io/badge/License-MIT-pink)
 
 ## Bri's Professional README.Generator ${Title}
+View here for the video:
+https://drive.google.com/file/d/1-vMuxmjrnIw4JsojzgeNpCwzc7kprpkh/view?usp=sharing
 
 ## Description
 
