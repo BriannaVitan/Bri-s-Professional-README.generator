@@ -24,7 +24,7 @@ This project is a README.generator made for our Node Challenge. This help me und
 
 ## Installation
 
-Clone the Repo ${Installation}
+Clone the Repo at git clone https://github.com/BriannaVitan/README.generator.git ${Installation}
 
 
 ## Usage
@@ -42,7 +42,7 @@ Contributions are welcomed and greatly appreciated. If you have a suggestion, pl
 ## Questions
 
 
-If you have any additional questions, please reach me ${Questions} at` 
+If you have any additional questions, please reach me ${Questions} at https://github.com/BriannaVitan/README.generator?tab=readme-ov-file` 
 
 inquirer
   .prompt([
