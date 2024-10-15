@@ -3,48 +3,7 @@ import inquirer from 'inquirer';
 import fs from 'fs';
 
 // Create an array of questions for user input
-const generateReadme = ({ Title, Description, TableofContent, Installation, Usage, License, Contributing, Questions}) =>
-
-`![Static Badge](https://img.shields.io/badge/License-MIT-pink)
-
-## Bri's Professional README.Generator ${Title}
-View here for the video:
-https://drive.google.com/file/d/1-vMuxmjrnIw4JsojzgeNpCwzc7kprpkh/view?usp=sharing
-
-## Description
-
-Welcome to my Professional README.generator!
-This project is a README.generator made for our Node Challenge. This help me understand the concept of inquirer better and it was fun to run node index.js. ${Description}
-
-## Table of Contents 
-
-- [Installation](#installation)
-- [Usage](#usage)
-- [License](#license)
-- [Contribute](#how-to-contribute)
-- [Questions](#questions) ${TableofContent}
-
-## Installation
-
-Clone the Repo at git clone https://github.com/BriannaVitan/README.generator.git ${Installation}
-
-
-## Usage
-
-images/README.generator.png ${Usage}
-
-## License
-
-This project is licensed under the MIT license. See LICENSE.txt for more information. ${License}
-
-## How to Contribute
-
-Contributions are welcomed and greatly appreciated. If you have a suggestion, please fork the repo and create a pull request. Thank you in advance! ${Contributing}
-
-## Questions
-
-
-If you have any additional questions, please reach me ${Questions} at https://github.com/BriannaVitan/README.generator?tab=readme-ov-file` 
+import generateMarkdown from './utils/generateMarkdown.js';
 
 inquirer
   .prompt([
@@ -69,9 +28,10 @@ inquirer
         name: "usage",
     },
     {
-        type: "input",
+        type: "list",
         message: "What is the license?",
         name: "license",
+        choices: ["mit", "apache", "mozilla", "none"],
     },
     {
         type: "input",
@@ -88,9 +48,9 @@ inquirer
 // Create a function to write README file
 .then((answers) => {
     
-    const renderLicenseBadge= generateReadme(answers);
+    const renderLicenseBadge= generateMarkdown(answers);
 
-    fs.writeFile('README.generator', renderLicenseBadge, (err) =>
+    fs.writeFile('README.generator.md', renderLicenseBadge, (err) =>
       err ? console.log(err) : console.log('Successfully created README.generator')
     );
   });
