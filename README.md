@@ -1,8 +1,8 @@
 ![Static Badge](https://img.shields.io/badge/License-MIT-pink)
 
 ## Bri's Professional README.Generator 
-View here for the video:
-https://drive.google.com/file/d/1-vMuxmjrnIw4JsojzgeNpCwzc7kprpkh/view?usp=sharing
+View here for the video: https://drive.google.com/file/d/12iYMBFKPOjyTMktLtdYkxIayktpqtXhI/view
+
 ## Description
 
 Welcome to my Professional README.generator!
@@ -36,4 +36,4 @@ Contributions are welcomed and greatly appreciated. If you have a suggestion, pl
 ## Questions
 
 
-If you have any additional questions, please reach me at https://github.com/BriannaVitan/README.generator?tab=readme-ov-file
+If you have any additional questions, please reach me at https://github.com/BriannaVitan/Bri-s-Professional-README.generator.git
